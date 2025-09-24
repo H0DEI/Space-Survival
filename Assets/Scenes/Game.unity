@@ -1763,46 +1763,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 595535628}
     m_Modifications:
-    - target: {fileID: -5633962818735835161, guid: 3272d27714f6d4c4bba717462c72bdd7, type: 3}
-      propertyPath: damage
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -5633962818735835161, guid: 3272d27714f6d4c4bba717462c72bdd7, type: 3}
-      propertyPath: warmup
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -5633962818735835161, guid: 3272d27714f6d4c4bba717462c72bdd7, type: 3}
-      propertyPath: aoeRadius
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -5633962818735835161, guid: 3272d27714f6d4c4bba717462c72bdd7, type: 3}
-      propertyPath: areaPrefab
-      value: 
-      objectReference: {fileID: 6917601883156478840, guid: 884574f82c1fa2b45ad06e2de8e33133, type: 3}
-    - target: {fileID: -5633962818735835161, guid: 3272d27714f6d4c4bba717462c72bdd7, type: 3}
-      propertyPath: lingerTime
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -5633962818735835161, guid: 3272d27714f6d4c4bba717462c72bdd7, type: 3}
-      propertyPath: damageDelay
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: -5633962818735835161, guid: 3272d27714f6d4c4bba717462c72bdd7, type: 3}
-      propertyPath: searchRadius
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: -5633962818735835161, guid: 3272d27714f6d4c4bba717462c72bdd7, type: 3}
-      propertyPath: enemyMask.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
-    - target: {fileID: 13736319868397499, guid: 3272d27714f6d4c4bba717462c72bdd7, type: 3}
-      propertyPath: xpPerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 13736319868397499, guid: 3272d27714f6d4c4bba717462c72bdd7, type: 3}
-      propertyPath: baseXpToNext
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 942749344807456597, guid: 3272d27714f6d4c4bba717462c72bdd7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1846,6 +1806,30 @@ PrefabInstance:
     - target: {fileID: 1471895978674447385, guid: 3272d27714f6d4c4bba717462c72bdd7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471288196215345621, guid: 3272d27714f6d4c4bba717462c72bdd7, type: 3}
+      propertyPath: interval
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471288196215345621, guid: 3272d27714f6d4c4bba717462c72bdd7, type: 3}
+      propertyPath: maxRadius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471288196215345621, guid: 3272d27714f6d4c4bba717462c72bdd7, type: 3}
+      propertyPath: wavePrefab
+      value: 
+      objectReference: {fileID: 6917601883156478840, guid: 113c016aa9cc2384a8af94015e376f4c, type: 3}
+    - target: {fileID: 6396166557078243717, guid: 3272d27714f6d4c4bba717462c72bdd7, type: 3}
+      propertyPath: damage
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6396166557078243717, guid: 3272d27714f6d4c4bba717462c72bdd7, type: 3}
+      propertyPath: interval
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6396166557078243717, guid: 3272d27714f6d4c4bba717462c72bdd7, type: 3}
+      propertyPath: arcAngleDeg
+      value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -20,6 +20,8 @@ GameObject:
   - component: {fileID: 13736319868397499}
   - component: {fileID: -2795497643214527240}
   - component: {fileID: -5633962818735835161}
+  - component: {fileID: 5471288196215345621}
+  - component: {fileID: 6396166557078243717}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -100,7 +102,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!114 &5382022257084159018
 MonoBehaviour:
@@ -203,8 +205,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startLevel: 1
-  baseXpToNext: 3
-  xpPerLevel: 3
+  baseXpToNext: 1
+  xpPerLevel: 1
   maxLevel: 50
   onLevelUp:
     m_PersistentCalls:
@@ -222,6 +224,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unlockableAttacks:
+  - {fileID: 6396166557078243717}
+  - {fileID: 5471288196215345621}
   - {fileID: -5633962818735835161}
 --- !u!114 &-5633962818735835161
 MonoBehaviour:
@@ -230,20 +234,70 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942749344807456597}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 935dae18077642d4197d254bea6f367b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  searchRadius: 25
+  searchRadius: 12
   enemyMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
   interval: 2.5
-  warmup: 0.6
-  aoeRadius: 3.5
+  damageDelay: 0.1
+  lingerTime: 2
+  aoeRadius: 1
   damage: 2
-  telegraphPrefab: {fileID: 6917601883156478840, guid: 884574f82c1fa2b45ad06e2de8e33133, type: 3}
+  areaPrefab: {fileID: 6917601883156478840, guid: 884574f82c1fa2b45ad06e2de8e33133, type: 3}
+  scaleAreaToRadius: 1
+--- !u!114 &5471288196215345621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942749344807456597}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b4d309abd568e7409b4796e69e3a535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interval: 3
+  damageDelay: 0.4
+  lingerTime: 0.6
+  maxRadius: 5
+  damage: 3
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 64
+  wavePrefab: {fileID: 0}
+  scaleWaveToRadius: 1
+  keepOriginalYScale: 1
+--- !u!114 &6396166557078243717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942749344807456597}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d62f396faa44bc4aabea9a1d9d99eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interval: 1.2
+  range: 3
+  arcAngleDeg: 100
+  sphereRadius: 2
+  forwardOffset: 1
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 64
+  damage: 2
+  slashPrefab: {fileID: 6917601883156478840, guid: 716faa65d30f89141b5fbd7957cff217, type: 3}
+  slashLifetime: 0.6
+  parentSlashToPlayer: 1
+  scaleSlashToRange: 1
 --- !u!1 &4594329757829993937
 GameObject:
   m_ObjectHideFlags: 0
