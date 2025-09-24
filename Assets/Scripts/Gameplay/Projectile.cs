@@ -23,7 +23,7 @@ public class Projectile : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             other.GetComponentInParent<Health>()?.TakeDamage(damage);
-            Debug.Log("Projectile hit: " + other.name);
+            //Debug.Log("Projectile hit: " + other.name);
             Destroy(gameObject);
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Walls"))

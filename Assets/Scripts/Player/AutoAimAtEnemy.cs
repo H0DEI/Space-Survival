@@ -20,7 +20,10 @@ public class AutoAimAtEnemy : MonoBehaviour
 
     private Transform currentTarget;
     private bool isAiming;
+    public bool IsAiming => isAiming;
+
     private readonly Collider[] overlapBuf = new Collider[64];
+    
 
     public void TriggerAim()
     {

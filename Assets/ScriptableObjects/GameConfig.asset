@@ -16,5 +16,5 @@ MonoBehaviour:
   b: 2
   enemyPrefab: {fileID: 2812222013960428491, guid: fc799e7a35fd49248be98babc6b3bd19, type: 3}
   enemySpeed: 6
-  moveSpeed: 10
+  moveSpeed: 6
   fakeGravity: -10

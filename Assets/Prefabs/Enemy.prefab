@@ -156,8 +156,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBarPrefab: {fileID: 4917369201549717378, guid: fe020b9d3cf69fd428b12f2c8b86f187, type: 3}
-  uiRoot: {fileID: 0}
-  offsetZ: 0.7
+  uiRoot: {fileID: 7396707857920068602}
+  offsetZ: 1
 --- !u!1001 &5743250619881259457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -192,7 +192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6519844488937305458, guid: 65b02f55fc0042c429ecc96a7529b6f8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0000000047683715
+      value: -0.295
       objectReference: {fileID: 0}
     - target: {fileID: 6519844488937305458, guid: 65b02f55fc0042c429ecc96a7529b6f8, type: 3}
       propertyPath: m_LocalRotation.w
