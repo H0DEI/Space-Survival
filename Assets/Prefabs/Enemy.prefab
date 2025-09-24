@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -7103089002824899821}
   - component: {fileID: 1490385449046999234}
   - component: {fileID: 2712772117399278797}
+  - component: {fileID: 4152984610339471943}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
@@ -158,6 +159,22 @@ MonoBehaviour:
   healthBarPrefab: {fileID: 4917369201549717378, guid: fe020b9d3cf69fd428b12f2c8b86f187, type: 3}
   uiRoot: {fileID: 7396707857920068602}
   offsetZ: 1
+--- !u!114 &4152984610339471943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2812222013960428491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c350eb32ec3c7041ad6fe2ae33efcc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  expOrbPrefab: {fileID: 6565844048248189701, guid: 8f3e0e88c44923a43bfe92bb9e7d918d, type: 3}
+  minOrbs: 1
+  maxOrbs: 1
+  scatterRadius: 2
 --- !u!1001 &5743250619881259457
 PrefabInstance:
   m_ObjectHideFlags: 0
